@@ -45,11 +45,11 @@ function gulpRubySass(sources, options) {
 	}
 
 	// error if user tries to pass a Sass option to sourcemap
-	if (typeof options.sourcemap !== 'boolean') {
-		emitErr(stream, 'The sourcemap option must be true or false. See the readme for instructions on using Sass sourcemaps with gulp.');
-	}
-
-	options.sourcemap = options.sourcemap === true ? 'file' : 'none';
+	// if (typeof options.sourcemap !== 'boolean') {
+	// 	emitErr(stream, 'The sourcemap option must be true or false. See the readme for instructions on using Sass sourcemaps with gulp.');
+	// }
+	//
+	// options.sourcemap = options.sourcemap === true ? 'file' : 'none';
 	options.update = true;
 
 	// simplified handling of array sources, like gulp.src
